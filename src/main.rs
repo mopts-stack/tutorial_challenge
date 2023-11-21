@@ -6,6 +6,7 @@ mod avoid_allocations;
 mod builder_pattern;
 mod function_arguments;
 mod iterating_options;
+mod json_results;
 
 #[tokio::main]
 async fn main() {
@@ -31,5 +32,11 @@ async fn main() {
 
     for handle in handles {
         handle.await.unwrap();
+    }
+
+    // json result
+    match json_results::start().await {
+        Ok(_) => return,
+        Err(e) => println!("error: {:#}", e),
     }
 }

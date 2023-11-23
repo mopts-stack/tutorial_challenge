@@ -7,6 +7,7 @@ mod builder_pattern;
 mod function_arguments;
 mod iterating_options;
 mod json_results;
+mod various_challanges;
 
 #[tokio::main]
 async fn main() {
@@ -39,4 +40,7 @@ async fn main() {
         Ok(_) => println!("Success"),
         Err(e) => println!("error: {:#}", e),
     }
+
+    // various challanges
+    various_challanges::start();
 }

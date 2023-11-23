@@ -35,6 +35,12 @@ pub fn start() {
     let greeting_morse = greeting.to_string().to_morse_code();
     print_morse_code(&greeting_morse);
     println!("✅ convert to morse test(s) passed");
+
+    let nn = vec![];
+    assert_eq!(sum_ignore_missing(nn), 0);
+    let nn = vec![None, Some(1), Some(5), Some(4), None, None];
+    assert_eq!(sum_ignore_missing(nn), 10);
+    println!("✅ sum ignore missing test(s) passed");
 }
 
 fn median(v: &mut Vec<f64>) -> Option<f64> {
@@ -154,4 +160,8 @@ fn print_morse_code(code: &Message) {
         print!(" ");
     }
     println!();
+}
+
+fn sum_ignore_missing(numbers: Vec<Option<i32>>) -> i32 {
+    numbers.iter().map(|x| x.unwrap_or(0)).sum()
 }

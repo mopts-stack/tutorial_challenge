@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 pub fn start() {
     let mut list = vec![1.0, 4.0, 5.0];
     assert_eq!(median(&mut list), Some(4.0));
@@ -12,6 +14,12 @@ pub fn start() {
     let list = vec!['a', 'b', 'a'];
     assert_eq!(unique(list), ['a', 'b']);
     println!("✅ unique test(s) passed");
+
+    let a: &str = "hello";
+    let b: String = "Hello".to_string();
+    info(&a);
+    info(&b);
+    println!("✅ print any text type test(s) passed");
 }
 
 fn median(v: &mut Vec<f64>) -> Option<f64> {
@@ -39,4 +47,8 @@ fn unique<T: Ord>(mut v: Vec<T>) -> Vec<T> {
     v.sort(); //_by(|x: &T, y: &T| x.cmp(y));
     v.dedup();
     v
+}
+
+fn info<T: Display>(t: &T) {
+    println!("{}", t);
 }

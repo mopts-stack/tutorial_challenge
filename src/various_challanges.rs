@@ -5,7 +5,13 @@ pub fn start() {
     assert_eq!(median(&mut list), None);
     let mut list = vec![1.0, 4.0, 6.0, 5.0];
     assert_eq!(median(&mut list), Some(4.5));
-    println!("median test passed ✅");
+    println!("✅ median test(s) passed");
+
+    let list = vec![1, 2, 3, 3, 4, 5, 6, 6, 6, 6];
+    assert_eq!(unique(list), [1, 2, 3, 4, 5, 6]);
+    let list = vec!['a', 'b', 'a'];
+    assert_eq!(unique(list), ['a', 'b']);
+    println!("✅ unique test(s) passed");
 }
 
 fn median(v: &mut Vec<f64>) -> Option<f64> {
@@ -27,4 +33,10 @@ fn median(v: &mut Vec<f64>) -> Option<f64> {
     };
 
     Some(med)
+}
+
+fn unique<T: Ord>(mut v: Vec<T>) -> Vec<T> {
+    v.sort(); //_by(|x: &T, y: &T| x.cmp(y));
+    v.dedup();
+    v
 }

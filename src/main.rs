@@ -36,7 +36,7 @@ async fn main() {
 
     // json result
     match json_results::start().await {
-        Ok(_) => return,
+        Ok(_) => println!("Success"),
         Err(e) => println!("error: {:#}", e),
     }
 }

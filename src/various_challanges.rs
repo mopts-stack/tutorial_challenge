@@ -20,6 +20,15 @@ pub fn start() {
     info(&a);
     info(&b);
     println!("✅ print any text type test(s) passed");
+
+    let mut users: Vec<&str> = vec!["Todd", "amy", "mike99", "Jennifer", "alison"];
+    println!("unsorted:                  {:?}", &users);
+    sort_usernames(&mut users);
+    println!("sorted case insensitively: {:?}", &users);
+    let mut users: Vec<&str> = vec!["Todd", "amy", "mike99", "Jennifer", "alison"];
+    users.sort();
+    println!("sorted using .sort():      {:?}", &users);
+    println!("✅ case insensitive sort test(s) passed");
 }
 
 fn median(v: &mut Vec<f64>) -> Option<f64> {
@@ -51,4 +60,12 @@ fn unique<T: Ord>(mut v: Vec<T>) -> Vec<T> {
 
 fn info<T: Display>(t: &T) {
     println!("{}", t);
+}
+
+fn sort_usernames<T: AsRef<str>>(usernames: &mut [T]) {
+    // simple way
+    // usernames.sort_by(|x: &T, y: &T| x.as_ref().to_lowercase().cmp(&y.as_ref().to_lowercase()))
+
+    // more efficient way
+    usernames.sort_by_cached_key(|x: &T| x.as_ref().to_lowercase())
 }

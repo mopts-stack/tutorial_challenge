@@ -1,6 +1,3 @@
-// #[macro_use]
-// extern crate derive_builder;
-
 mod async_await;
 mod avoid_allocations;
 mod builder_pattern;
@@ -8,6 +5,7 @@ mod function_arguments;
 mod iterating_options;
 mod json_results;
 mod map_combinators;
+mod user_input;
 mod various_challanges;
 
 #[tokio::main]
@@ -47,4 +45,6 @@ async fn main() {
 
     // map combinators
     map_combinators::start();
+
+    user_input::start();
 }

@@ -7,6 +7,7 @@ mod json_results;
 mod map_combinators;
 mod user_input;
 mod various_challanges;
+mod generics_example;
 
 #[tokio::main]
 async fn main() {
@@ -47,4 +48,6 @@ async fn main() {
     map_combinators::start();
 
     user_input::start();
+
+    generics_example::start();
 }

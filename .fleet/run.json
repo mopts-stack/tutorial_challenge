@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "type": "cargo",
+            "name": "Run Debug",
+            "cargoArgs": ["run"],
+            "dependsOn": ["Run all tests"],
+        },
+        {
+            "type": "cargo",
+            "name": "Run Release",
+            "cargoArgs": ["run", "--release"],
+            "dependsOn": ["Run all tests"],
+        },
+        {
+            "type": "cargo",
+            "name": "Build Debug",
+            "cargoArgs": ["build"],
+            "dependsOn": ["Run all tests"],
+        },
+        {
+            "type": "cargo",
+            "name": "Build Release",
+            "cargoArgs": ["build", "--release"],
+            "dependsOn": ["Run all tests"],
+        },
+        {
+            "type": "cargo",
+            "name": "Run all tests",
+            "cargoArgs": ["test"],
+        },
+    ]
+}

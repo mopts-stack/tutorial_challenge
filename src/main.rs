@@ -7,6 +7,7 @@ mod builder_pattern;
 mod function_arguments;
 mod iterating_options;
 mod json_results;
+mod map_combinators;
 mod various_challanges;
 
 #[tokio::main]
@@ -43,4 +44,7 @@ async fn main() {
 
     // various challanges
     various_challanges::start();
+
+    // map combinators
+    map_combinators::start();
 }

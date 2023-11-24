@@ -21,5 +21,6 @@
             "pluginName": "fleet.git.frontend"
         }
     ],
-    "editor.guides": []
+    "editor.guides": [],
+    "editor.formatOnSave": true,
 }

@@ -28,6 +28,12 @@
             "type": "cargo",
             "name": "Run all tests",
             "cargoArgs": ["test"],
+            "dependsOn": ["Check for linting and format errors"],
+        },
+        {
+            "type": "cargo",
+            "name": "Check for linting and format errors",
+            "cargoArgs": ["check"],
         },
     ]
 }

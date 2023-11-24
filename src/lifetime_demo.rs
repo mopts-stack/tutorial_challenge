@@ -58,6 +58,7 @@ impl<'a> YoungPeople<'a> {
     }
 }
 
+/// start of the example
 pub fn start() {
     let ids = new_ids();
     let young = YoungPeople {

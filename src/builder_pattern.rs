@@ -1,5 +1,7 @@
 #![allow(dead_code, unused_variables, non_camel_case_types)]
 
+use derive_builder::Builder;
+
 #[derive(Debug, Clone)]
 struct TLSCert {
     key: String,

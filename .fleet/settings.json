@@ -20,5 +20,6 @@
             "type": "add",
             "pluginName": "fleet.git.frontend"
         }
-    ]
+    ],
+    "editor.guides": []
 }

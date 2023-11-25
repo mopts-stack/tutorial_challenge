@@ -47,4 +47,6 @@ async fn main() {
     custom_error::start();
 
     type_state::start();
+
+    type_state2::start();
 }

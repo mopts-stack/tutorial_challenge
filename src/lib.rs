@@ -9,5 +9,6 @@ pub mod json_results;
 pub mod lifetime_demo;
 pub mod map_combinators;
 pub mod type_state;
+pub mod type_state2;
 pub mod user_input;
 pub mod various_challanges;

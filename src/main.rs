@@ -45,4 +45,6 @@ async fn main() {
     lifetime_demo::start();
 
     custom_error::start();
+
+    type_state::start();
 }

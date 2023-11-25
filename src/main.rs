@@ -33,20 +33,12 @@ async fn main() {
     }
 
     various_challanges::start();
-
     map_combinators::start();
-
     user_input::start();
-
     generics_example::start();
-
     lifetime_demo::start();
-
     custom_error::start();
-
     type_state::start();
-
     type_state2::start();
-
     match_guards::start();
 }

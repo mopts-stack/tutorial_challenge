@@ -1104,6 +1104,7 @@ dependencies = [
  "chrono",
  "crossbeam-channel",
  "derive_builder",
+ "parking_lot",
  "reqwest",
  "serde",
  "serde_json",

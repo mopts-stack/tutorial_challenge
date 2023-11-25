@@ -5,6 +5,7 @@ pub mod custom_error;
 pub mod from_into;
 pub mod function_arguments;
 pub mod generics_example;
+pub mod into_iterator;
 pub mod iterating_options;
 pub mod json_results;
 pub mod lifetime_demo;

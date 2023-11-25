@@ -48,4 +48,5 @@ async fn main() {
     message_passing::start();
     smart_pointers::start();
     mutex::start();
+    into_iterator::start();
 }

@@ -43,4 +43,5 @@ async fn main() {
     match_guards::start();
     slices::start();
     from_into::start();
+    passing_closures::start();
 }

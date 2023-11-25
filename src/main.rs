@@ -49,4 +49,5 @@ async fn main() {
     smart_pointers::start();
     mutex::start();
     into_iterator::start();
+    into_iterator2::start();
 }

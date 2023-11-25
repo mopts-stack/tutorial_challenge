@@ -1,14 +1,4 @@
-mod async_await;
-mod avoid_allocations;
-mod builder_pattern;
-mod function_arguments;
-mod generics_example;
-mod iterating_options;
-mod json_results;
-mod lifetime_demo;
-mod map_combinators;
-mod user_input;
-mod various_challanges;
+use tutorial_challange::*;
 
 #[tokio::main]
 async fn main() {
@@ -53,4 +43,6 @@ async fn main() {
     generics_example::start();
 
     lifetime_demo::start();
+
+    custom_error::start();
 }

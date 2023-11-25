@@ -8,6 +8,7 @@ pub mod iterating_options;
 pub mod json_results;
 pub mod lifetime_demo;
 pub mod map_combinators;
+pub mod match_guards;
 pub mod type_state;
 pub mod type_state2;
 pub mod user_input;

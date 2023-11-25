@@ -49,4 +49,6 @@ async fn main() {
     type_state::start();
 
     type_state2::start();
+
+    match_guards::start();
 }

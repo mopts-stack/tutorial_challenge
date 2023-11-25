@@ -32,10 +32,8 @@ async fn main() {
         Err(e) => println!("error: {:#}", e),
     }
 
-    // various challanges
     various_challanges::start();
 
-    // map combinators
     map_combinators::start();
 
     user_input::start();

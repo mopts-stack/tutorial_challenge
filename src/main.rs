@@ -45,4 +45,5 @@ async fn main() {
     from_into::start();
     passing_closures::start();
     threads::start();
+    message_passing::start();
 }

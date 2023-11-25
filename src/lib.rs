@@ -10,6 +10,7 @@ pub mod json_results;
 pub mod lifetime_demo;
 pub mod map_combinators;
 pub mod match_guards;
+pub mod message_passing;
 pub mod passing_closures;
 pub mod slices;
 pub mod threads;

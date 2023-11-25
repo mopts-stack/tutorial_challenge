@@ -44,4 +44,5 @@ async fn main() {
     slices::start();
     from_into::start();
     passing_closures::start();
+    threads::start();
 }

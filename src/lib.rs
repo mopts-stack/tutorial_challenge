@@ -12,6 +12,7 @@ pub mod map_combinators;
 pub mod match_guards;
 pub mod passing_closures;
 pub mod slices;
+pub mod threads;
 pub mod type_state;
 pub mod type_state2;
 pub mod user_input;

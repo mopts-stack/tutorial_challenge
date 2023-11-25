@@ -13,6 +13,7 @@ pub mod match_guards;
 pub mod message_passing;
 pub mod passing_closures;
 pub mod slices;
+pub mod smart_pointers;
 pub mod threads;
 pub mod type_state;
 pub mod type_state2;

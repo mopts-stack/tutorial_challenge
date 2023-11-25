@@ -46,4 +46,5 @@ async fn main() {
     passing_closures::start();
     threads::start();
     message_passing::start();
+    smart_pointers::start();
 }

@@ -50,4 +50,5 @@ async fn main() {
     mutex::start();
     into_iterator::start();
     into_iterator2::start();
+    macros::start();
 }

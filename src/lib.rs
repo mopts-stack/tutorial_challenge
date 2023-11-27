@@ -10,6 +10,7 @@ pub mod into_iterator2;
 pub mod iterating_options;
 pub mod json_results;
 pub mod lifetime_demo;
+pub mod macros;
 pub mod map_combinators;
 pub mod match_guards;
 pub mod message_passing;

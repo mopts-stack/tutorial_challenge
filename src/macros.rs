@@ -64,10 +64,27 @@ impl_reagent_container!(TallFlask: 32);
 impl_reagent_container!(TestTube: 10);
 impl_reagent_container!(Pipette: 4);
 
+macro_rules! myvec {
+    (
+        $( $element:expr ),+
+        $(,)? // trailing comma which is optional
+    ) => {{
+        let mut v = Vec::new();
+        $(
+            v.push($element);
+        )+
+        v
+    }};
+}
+
 pub fn start() {
     let tube = TestTube {
         current_volume: Volume(0),
     };
 
     dbg!(tube.max_volume());
+
+    let v = myvec![1, 2, 3, 4,];
+
+    println!("{:#?}", v);
 }

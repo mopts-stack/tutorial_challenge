@@ -51,4 +51,6 @@ async fn main() {
     into_iterator::start();
     into_iterator2::start();
     macros::start();
+    macros2::start();
+    macros3::start();
 }

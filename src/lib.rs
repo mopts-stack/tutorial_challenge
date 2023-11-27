@@ -13,6 +13,7 @@ pub mod lifetime_demo;
 pub mod macros;
 pub mod macros2;
 pub mod macros3;
+pub mod macros4;
 pub mod map_combinators;
 pub mod match_guards;
 pub mod message_passing;

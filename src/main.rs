@@ -53,4 +53,5 @@ async fn main() {
     macros::start();
     macros2::start();
     macros3::start();
+    macros4::start();
 }
